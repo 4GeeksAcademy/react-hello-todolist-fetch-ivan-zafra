@@ -19,7 +19,6 @@ const Home = () => {
       const res = await fetch(url);
       const data = await res.json();
       setTodos(data.todos);
-      console.log(todos);
     } catch (error) {
       console.log(error);
     }
