@@ -94,10 +94,6 @@ const Home = () => {
   const submitTodo = (e) => {
     e.key === "Enter" ? addTodo(users) : null;
   };
-  const tarea = () => {
-    if (todos.length == 1) return "tarea";
-    else return "tareas";
-  };
 
   //Aqui empieza el print
   return (
