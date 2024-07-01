@@ -135,9 +135,6 @@ const Home = () => {
               </li>
             ))}
         </li>
-        <span>
-          {todos.length} {tarea()} pendientes.
-        </span>
       </ul>
     </div>
   );
