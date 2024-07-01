@@ -19,7 +19,28 @@ const Home = () => {
       const res = await fetch(url);
       const data = await res.json();
       setTodos(data.todos);
+      console.log(data);
       console.log(todos);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const addUser = async () => {
+    try {
+      const res = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          label: todoInput,
+          is_done: false,
+        }),
+      });
+      const data = await res.json();
+      setUsers("");
+      console.log(data);
     } catch (error) {
       console.log(error);
     }
@@ -91,6 +112,7 @@ const Home = () => {
             value={users}
           />
           <button onClick={getList}>Login</button>
+          <button onClick={addUser}>Register</button>
         </li>
         <li>
           <input
