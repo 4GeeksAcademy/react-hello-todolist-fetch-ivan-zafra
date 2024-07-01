@@ -42,7 +42,6 @@ const Home = () => {
       getList();
       setTodoInput("");
       console.log(data);
-      console.log(urlUserTodos);
     } catch (error) {
       console.log(error);
     }
