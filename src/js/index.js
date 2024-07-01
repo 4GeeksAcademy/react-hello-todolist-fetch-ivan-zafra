@@ -6,6 +6,8 @@ import ReactDOM from "react-dom/client";
 import "../styles/index.css";
 
 //import your own components
-import TodoApp from "./component/TodoApp";
+import Home from "./component/home.jsx";
+
 //render your react application
-ReactDOM.createRoot(document.getElementById("app")).render(<TodoApp />);
+ReactDOM.createRoot(document.getElementById('app')).render(<Home/>);
+
